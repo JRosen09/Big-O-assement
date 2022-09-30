@@ -1,0 +1,33 @@
+running node runtime.js
+results = the extraLargeArray
+insert 1.5174065049999999 s, 1.56114378 s, 1.545013212 s, 1.526953478 s, 1.541313274 s
+append 4.597245 ms, 5.374638 ms, 4.504325 ms, 4.238816 ms, 4.203455 ms
+
+tinyArray 
+resulst run 5 times:
+Results for the tinyArray
+insert 47.13 μs, 44.937 μs, 46.063 μs, 45.48 μs, 50.87 μs
+append 106.167 μs, 98.27 μs, 98.891 μs, 104.957 μs, 126.979 μs
+
+smallArray
+resulst run 5 times:
+insert 129.58 μs, 61.502 μs, 79.396 μs, 66.995 μs, 58.536 μs
+append 149.416 μs, 114.513 μs, 140.515 μs, 138.203 μs, 119.107 μs
+
+mediumArray
+resulst run 5 times:
+insert 189.061 μs, 187.455 μs, 274.697 μs, 248.584 μs, 188.596 μs
+append 164.258 μs, 162.273 μs, 195.95 μs, 204.274 μs, 190.127 μs
+
+largeArray
+resulst run 5 times:
+insert 11.605258 ms, 11.916725 ms, 11.861569 ms, 12.328805 ms, 12.104208 ms
+append 638.191 μs, 686.404 μs, 647.862 μs, 693.053 μs, 742.983 μs
+
+
+observations: 
+insert resulsts comparably seems to be staying average or close to their first initial results, except for in smallArray, where the initial start is super high
+compared to its last result.
+append resulsts comparably seems to be increasing from the first result to the last result, except for in smallArray, where it appears to maintain an average.
+Aswell as extraLargeArray.
+I would say the insert scalse better due to it staying close to its first initial result indicating either an 0(1) or 0(n)
